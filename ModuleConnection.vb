@@ -5,7 +5,7 @@ Module ModuleConnection
     'functon for connection 
     Sub OpenConnection()
         Try
-            connection = New SqlConnection("Data Source=N550JK\SQLEXPRESS01; Initial Catalog=Users; Integrated Security=True;")
+            connection = New SqlConnection("Data Source="your local host"; Initial Catalog="your database name"; Integrated Security=True;")
             If connection.State = ConnectionState.Closed Then
                 connection.Open()
             End If
